@@ -1,4 +1,5 @@
 import os
+import string
 #帮助：
 #readini()为读取文档配置
 #addini为添加工具配置
@@ -31,13 +32,13 @@ def readini() :
         j = j+2
         
     print("输入add进行工具添加")
-    print("输入del进行工具删除")
-    choose = int(input())
-    syslist = choose*2 - 1
-    os.system(syslist)
-    
     choose = input("")
-    if choose == "add" :
+    choose_number = choose
+    choose_number = int(choose_number)
+    choose_str = string(choose)
+    syslist = choose_number*2 - 1
+
+    if choose_str == 'add' :
         print("请输入你要添加的工具名称")
         tool_name = input("")
         print("请输入你要运行的工具的绝对路径")

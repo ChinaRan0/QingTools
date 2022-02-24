@@ -34,7 +34,7 @@ def readini() :
     print("输入del进行工具删除")
     choose = int(input())
     syslist = choose*2 - 1
-    print(syslist)
+    os.system(syslist)
     
     choose = input("")
     if choose == "add" :
